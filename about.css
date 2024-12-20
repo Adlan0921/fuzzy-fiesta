@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: rgba(174, 227, 199, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #73c993;
+    color: white;
+    border-radius: 5px;
+}
+
+.about-system {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    max-width: 800px; 
+}
+
+.about-system h1 {
+    font-size: 32px;
+    color: #000;
+}
+
+.about-system p,
+.about-system ul {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-system .system-image {
+    max-width: 100%;
+    height: auto; /* Автоматическая высота для поддержания пропорций */
+    border-radius: 5px;
+    margin-top: 20px; /* Отступ сверху для изображения */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #73c993;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

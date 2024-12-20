@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - OptimaBase</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">OptimaBase</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">О системе</a></li>
+                <li><a href="features.html">Функции системы</a></li>
+                <li><a href="specs.html">Технические характеристики</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Добро пожаловать в OptimaBase!</h1>
+            <p>Управляйте складом и логистикой с лёгкостью.</p>
+        </section>
+
+        <section class="image-slider">
+            <div class="slides">
+                <img src="img/а1.webp" alt="Слайд 1">
+                <img src="img/а2.webp" alt="Слайд 2">
+                <img src="img/а3.webp" alt="Слайд 3">
+            </div>
+            
+            </div>
+        </section>
+
+        <section class="features-preview">
+            <h2></h2>
+            <div class="card">
+                <h3>Управление складом</h3>
+                <p>Эффективное управление складскими запасами и операциями.</p>
+            </div>
+            <div class="card">
+                <h3>Оптимизация маршрутов</h3>
+                <p>Сокращение времени и затрат на доставку товаров.</p>
+            </div>
+            <div class="card">
+                <h3>Аналитика</h3>
+                <p>Получение данных для принятия обоснованных решений.</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Отзывы клиентов</h2>
+            <blockquote>
+                <p>"OptimaBase значительно упростила управление нашим складом!"</p>
+                <cite>- Игорь Петров, Менеджер склада</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Отличная система, все функции работают без сбоев!"</p>
+                <cite>- Анна Сидорова, Логист</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1
